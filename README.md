@@ -9,7 +9,21 @@ A collection of highly robust, production-grade agent skills designed to create 
 
 ## Installation
 
-You can install these skills globally into your agent configuration using `agent-skills-cli` or by copying the respective folders into your agent's `.skills` or context directory.
+### Using agent-skills-cli (Recommended)
+
+You can easily install these skills globally using the `agent-skills-cli` via npx:
+
+```bash
+# Install Checkpoint Manager
+npx agent-skills add github:ReiiYuki/being-skynet-skills/checkpoint-manager
+
+# Install Exhaustive Development Loop
+npx agent-skills add github:ReiiYuki/being-skynet-skills/exhaustive-development-loop
+```
+
+### Manual Installation
+
+Alternatively, you can clone this repository and manually copy the respective folders into your agent's local `.skills` or context directory.
 
 ## Sponsor
 
