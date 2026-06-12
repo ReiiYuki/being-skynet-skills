@@ -6,6 +6,7 @@ A collection of highly robust, production-grade agent skills designed to create 
 
 1. **[Checkpoint Manager](./checkpoint-manager/SKILL.md)**: Instills a risk-averse persona into the agent. The agent proactively creates isolated, non-git local backups in a `.checkpoints` directory before executing large multi-file refactors or risky changes, ensuring no progress is ever lost during long-running tasks.
 2. **[Exhaustive Development Loop](./exhaustive-development-loop/SKILL.md)**: Instills an unrelenting developer persona. It forces the agent into a continuous `Research -> Develop -> Revalidate -> Checkpoint` loop, allowing it to autonomously iterate until the project is perfect or the token limit is physically reached.
+3. **[Background Loop Scheduler](./background-loop-scheduler/SKILL.md)**: Instructs the agent to utilize internal scheduling and cron job capabilities (like the `/schedule` command). It automatically schedules reminders to wake itself (or subagents) up to continue the exhaustive development loop infinitely in the background without user intervention.
 
 ## Installation
 
@@ -19,6 +20,9 @@ npx agent-skills add github:ReiiYuki/being-skynet-skills/checkpoint-manager
 
 # Install Exhaustive Development Loop
 npx agent-skills add github:ReiiYuki/being-skynet-skills/exhaustive-development-loop
+
+# Install Background Loop Scheduler
+npx agent-skills add github:ReiiYuki/being-skynet-skills/background-loop-scheduler
 ```
 
 ### Manual Installation
